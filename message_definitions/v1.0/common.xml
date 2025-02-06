@@ -7892,5 +7892,15 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+    <message id="42501" name="TOF_OBSTACLES_CHUNK">
+      <description>Time of flight obstacles</description>
+      <field type="uint8_t" name="chunk_id"></field>
+      <field type="uint8_t" name="num_chunks"></field>
+      <field type="uint8_t" name="num_points_chunk"></field>
+      <field type="uint32_t" name="num_points_total"></field>
+      <field type="float[20]" name="points_x"></field>
+      <field type="float[20]" name="points_y"></field>
+      <field type="float[20]" name="points_z"></field>
+    </message>
   </messages>
 </mavlink>
