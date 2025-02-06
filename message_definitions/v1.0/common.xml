@@ -7902,5 +7902,12 @@
       <field type="float[20]" name="points_y"></field>
       <field type="float[20]" name="points_z"></field>
     </message>
+    <message id="42502" name="CBF_DEBUG">
+      <description>Debugging info for the CBF safety filter</description>
+      <field type="uint64_t" name="time_unix_usec" units="us">Timestamp (UNIX epoch time).</field>
+      <field type="float" name="h"></field>
+      <field type="float[3]" name="input"></field>
+      <field type="float[3]" name="output"></field>
+    </message>
   </messages>
 </mavlink>
