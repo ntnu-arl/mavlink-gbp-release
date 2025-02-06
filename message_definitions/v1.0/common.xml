@@ -7905,9 +7905,13 @@
     <message id="42502" name="CBF_DEBUG">
       <description>Debugging info for the CBF safety filter</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX epoch time).</field>
+      <field type="uint8_t" name="qp_fail"></field>
       <field type="float" name="h"></field>
+      <field type="float" name="h1"></field>
+      <field type="float" name="h2"></field>
       <field type="float[3]" name="input"></field>
       <field type="float[3]" name="output"></field>
+      <field type="float[2]" name="slack"></field>
     </message>
   </messages>
 </mavlink>
